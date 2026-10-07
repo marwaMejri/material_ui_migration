@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+import 'package:cupertino_ui/cupertino_ui.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:material_ui_migration/app/locale_controller.dart';
 import 'package:material_ui_migration/core/theme/app_theme.dart';
 import 'package:material_ui_migration/features/dashboard/widgets/section.dart';

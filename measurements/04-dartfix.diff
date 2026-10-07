@@ -1,0 +1,155 @@
+diff --git a/lib/app/app.dart b/lib/app/app.dart
+index 8af2b87..ff33df5 100644
+--- a/lib/app/app.dart
++++ b/lib/app/app.dart
+@@ -1,4 +1,4 @@
+-import 'package:flutter/material.dart';
++import 'package:material_ui/material_ui.dart';
+ import 'package:flutter_localizations/flutter_localizations.dart';
+ import 'package:material_ui_migration/core/theme/app_theme.dart';
+ import 'package:material_ui_migration/features/dashboard/dashboard_page.dart';
+diff --git a/lib/app/locale_controller.dart b/lib/app/locale_controller.dart
+index c40e516..0dab940 100644
+--- a/lib/app/locale_controller.dart
++++ b/lib/app/locale_controller.dart
+@@ -1,4 +1,4 @@
+-import 'package:flutter/material.dart';
++import 'package:material_ui/material_ui.dart';
+ 
+ /// Holds the locale the user picked, and nothing else.
+ ///
+diff --git a/lib/core/theme/app_theme.dart b/lib/core/theme/app_theme.dart
+index 3ff5357..e6fe398 100644
+--- a/lib/core/theme/app_theme.dart
++++ b/lib/core/theme/app_theme.dart
+@@ -1,5 +1,5 @@
+-import 'package:flutter/cupertino.dart';
+-import 'package:flutter/material.dart';
++import 'package:cupertino_ui/cupertino_ui.dart';
++import 'package:material_ui/material_ui.dart';
+ 
+ /// One place for both design systems.
+ ///
+diff --git a/lib/features/dashboard/dashboard_page.dart b/lib/features/dashboard/dashboard_page.dart
+index 496ec36..94447da 100644
+--- a/lib/features/dashboard/dashboard_page.dart
++++ b/lib/features/dashboard/dashboard_page.dart
+@@ -1,4 +1,4 @@
+-import 'package:flutter/material.dart';
++import 'package:material_ui/material_ui.dart';
+ import 'package:material_ui_migration/features/legacy/legacy_summary.dart';
+ 
+ import '../../core/demo_data.dart';
+diff --git a/lib/features/dashboard/widgets/stat_card.dart b/lib/features/dashboard/widgets/stat_card.dart
+index 42acf57..44cb0e0 100644
+--- a/lib/features/dashboard/widgets/stat_card.dart
++++ b/lib/features/dashboard/widgets/stat_card.dart
+@@ -1,4 +1,4 @@
+-import 'package:flutter/material.dart';
++import 'package:material_ui/material_ui.dart';
+ 
+ /// Takes a Material type as a constructor argument.
+ ///
+diff --git a/lib/features/detail/detail_page.dart b/lib/features/detail/detail_page.dart
+index 16a2a39..084ab9b 100644
+--- a/lib/features/detail/detail_page.dart
++++ b/lib/features/detail/detail_page.dart
+@@ -1,4 +1,4 @@
+-import 'package:flutter/material.dart';
++import 'package:material_ui/material_ui.dart';
+ import 'package:material_ui_migration/core/demo_data.dart';
+ import 'package:material_ui_migration/l10n/app_localizations.dart';
+ 
+diff --git a/lib/features/legacy/legacy_summary.dart b/lib/features/legacy/legacy_summary.dart
+index 490251e..3611368 100644
+--- a/lib/features/legacy/legacy_summary.dart
++++ b/lib/features/legacy/legacy_summary.dart
+@@ -21,7 +21,7 @@
+ // No third-party package needed to see it. Two imports in one repository are
+ // enough.
+ 
+-import 'package:flutter/material.dart';
++import 'package:material_ui/material_ui.dart';
+ import 'package:material_ui_migration/features/dashboard/widgets/stat_card.dart';
+ import 'package:material_ui_migration/l10n/app_localizations.dart';
+ 
+diff --git a/lib/features/settings/settings_page.dart b/lib/features/settings/settings_page.dart
+index 3241c99..650b32e 100644
+--- a/lib/features/settings/settings_page.dart
++++ b/lib/features/settings/settings_page.dart
+@@ -1,5 +1,5 @@
+-import 'package:flutter/cupertino.dart';
+-import 'package:flutter/material.dart';
++import 'package:cupertino_ui/cupertino_ui.dart';
++import 'package:material_ui/material_ui.dart';
+ import 'package:material_ui_migration/app/locale_controller.dart';
+ import 'package:material_ui_migration/core/theme/app_theme.dart';
+ import 'package:material_ui_migration/features/dashboard/widgets/section.dart';
+diff --git a/lib/features/settings/widgets/themed_badge.dart b/lib/features/settings/widgets/themed_badge.dart
+index 2895db1..57136a5 100644
+--- a/lib/features/settings/widgets/themed_badge.dart
++++ b/lib/features/settings/widgets/themed_badge.dart
+@@ -1,4 +1,4 @@
+-import 'package:flutter/cupertino.dart';
++import 'package:cupertino_ui/cupertino_ui.dart';
+ 
+ /// The Cupertino counterpart of [StatCard]: a Cupertino type in a constructor.
+ ///
+diff --git a/lib/main.dart b/lib/main.dart
+index f544753..c45fe69 100644
+--- a/lib/main.dart
++++ b/lib/main.dart
+@@ -13,7 +13,7 @@
+ //
+ // Run `flutter test` before touching anything. The suite is the referee.
+ 
+-import 'package:flutter/material.dart';
++import 'package:material_ui/material_ui.dart';
+ 
+ import 'app/app.dart';
+ 
+diff --git a/pubspec.yaml b/pubspec.yaml
+index b5e41a4..dc54c8a 100644
+--- a/pubspec.yaml
++++ b/pubspec.yaml
+@@ -38,6 +38,8 @@ dependencies:
+     sdk: flutter
+   intl: any
+ 
++  cupertino_ui: any
++  material_ui: any
+ dev_dependencies:
+   flutter_test:
+     sdk: flutter
+diff --git a/test/dashboard_test.dart b/test/dashboard_test.dart
+index 2edfaca..67b1bb9 100644
+--- a/test/dashboard_test.dart
++++ b/test/dashboard_test.dart
+@@ -1,4 +1,4 @@
+-import 'package:flutter/material.dart';
++import 'package:material_ui/material_ui.dart';
+ import 'package:flutter_test/flutter_test.dart';
+ import 'package:material_ui_migration/app/app.dart';
+ import 'package:material_ui_migration/features/dashboard/widgets/stat_card.dart';
+diff --git a/test/localization_test.dart b/test/localization_test.dart
+index 3d07f00..7257082 100644
+--- a/test/localization_test.dart
++++ b/test/localization_test.dart
+@@ -1,5 +1,5 @@
+-import 'package:flutter/cupertino.dart';
+-import 'package:flutter/material.dart';
++import 'package:cupertino_ui/cupertino_ui.dart';
++import 'package:material_ui/material_ui.dart';
+ import 'package:flutter_test/flutter_test.dart';
+ import 'package:material_ui_migration/app/app.dart';
+ 
+diff --git a/test/settings_test.dart b/test/settings_test.dart
+index 9062b4c..2aba046 100644
+--- a/test/settings_test.dart
++++ b/test/settings_test.dart
+@@ -1,4 +1,4 @@
+-import 'package:flutter/cupertino.dart';
++import 'package:cupertino_ui/cupertino_ui.dart';
+ import 'package:flutter_test/flutter_test.dart';
+ import 'package:material_ui_migration/app/app.dart';
+ import 'package:material_ui_migration/features/settings/widgets/themed_badge.dart';

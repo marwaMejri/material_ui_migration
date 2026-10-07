@@ -13,7 +13,7 @@
 //
 // Run `flutter test` before touching anything. The suite is the referee.
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import 'app/app.dart';
 

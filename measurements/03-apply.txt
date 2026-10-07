@@ -1,0 +1,46 @@
+Computing fixes in material_ui_migration...
+Applying fixes...
+
+lib/app/app.dart
+  migrate_design_widgets - 1 fix
+
+lib/app/locale_controller.dart
+  migrate_design_widgets - 1 fix
+
+lib/core/theme/app_theme.dart
+  migrate_design_widgets - 2 fixes
+
+lib/features/dashboard/dashboard_page.dart
+  migrate_design_widgets - 1 fix
+
+lib/features/dashboard/widgets/stat_card.dart
+  migrate_design_widgets - 1 fix
+
+lib/features/detail/detail_page.dart
+  migrate_design_widgets - 1 fix
+
+lib/features/legacy/legacy_summary.dart
+  migrate_design_widgets - 1 fix
+
+lib/features/settings/settings_page.dart
+  migrate_design_widgets - 2 fixes
+
+lib/features/settings/widgets/themed_badge.dart
+  migrate_design_widgets - 1 fix
+
+lib/main.dart
+  migrate_design_widgets - 1 fix
+
+pubspec.yaml
+  missing_dependency - 1 fix
+
+test/dashboard_test.dart
+  migrate_design_widgets - 1 fix
+
+test/localization_test.dart
+  migrate_design_widgets - 2 fixes
+
+test/settings_test.dart
+  migrate_design_widgets - 1 fix
+
+17 fixes made in 14 files.

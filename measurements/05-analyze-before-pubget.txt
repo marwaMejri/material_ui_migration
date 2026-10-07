@@ -1,0 +1,6 @@
+Analyzing material_ui_migration...
+
+  error - lib/app/app.dart:66:9 - The name 'GlobalMaterialLocalizations' is defined in the libraries 'package:flutter_localizations/src/material_localizations.dart (via package:flutter_localizations/flutter_localizations.dart)' and 'package:material_ui/src/global_material_localizations.dart (via package:material_ui/material_ui.dart)'. Try using 'as prefix' for one of the import directives, or hiding the name from all but one of the imports. - ambiguous_import
+  error - lib/app/app.dart:66:9 - The values in a const list literal must be constants. Try removing the keyword 'const' from the list literal. - non_constant_list_element
+
+2 issues found.

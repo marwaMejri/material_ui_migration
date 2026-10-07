@@ -21,7 +21,7 @@
 // No third-party package needed to see it. Two imports in one repository are
 // enough.
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:material_ui_migration/features/dashboard/widgets/stat_card.dart';
 import 'package:material_ui_migration/l10n/app_localizations.dart';
 
