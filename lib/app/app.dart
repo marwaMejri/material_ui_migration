@@ -1,5 +1,4 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:material_ui_migration/core/theme/app_theme.dart';
 import 'package:material_ui_migration/features/dashboard/dashboard_page.dart';
 import 'package:material_ui_migration/l10n/app_localizations.dart';
@@ -54,18 +53,20 @@ class _LocalizedApp extends StatelessWidget {
       theme: AppTheme.material,
       locale: localeController.value,
 
-      // The four delegates. Three of them come from flutter_localizations,
-      // which is exactly what the migration replaces with a single static
-      // member, `GlobalMaterialLocalizations.delegates`.
+      // The only API change of this whole migration, and the only line
+      // `dart fix` could not do for us.
       //
-      // AppLocalizations is generated from lib/l10n/*.arb by gen-l10n. That
-      // generated file is the reason this app can reproduce the failure mode
-      // where a non-English locale breaks after migrating.
-      localizationsDelegates: const <LocalizationsDelegate<dynamic>>[
+      // Before, this was four entries: ours, plus the Material, Cupertino and
+      // Widgets delegates from flutter_localizations. `material_ui` ships its
+      // own `GlobalMaterialLocalizations`, whose static `delegates` already
+      // contains the Cupertino and Widgets ones.
+      //
+      // Keeping the flutter_localizations import alongside material_ui is what
+      // produced the `ambiguous_import` error: two libraries declaring the same
+      // name. The import is gone now.
+      localizationsDelegates: <LocalizationsDelegate<dynamic>>[
         AppLocalizations.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
+        ...GlobalMaterialLocalizations.delegates,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
 

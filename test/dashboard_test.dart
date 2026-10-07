@@ -29,6 +29,13 @@ void main() {
   testWidgets('the dialog opens and its cancel button comes from Material', (
     WidgetTester tester,
   ) async {
+    // The default test viewport is 800x600, and the dashboard is a ListView,
+    // which only builds the children it displays. A taller viewport keeps
+    // every child in the tree, so this test does not depend on scrolling.
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1.0;
+    addTearDown(tester.view.reset);
+
     await tester.pumpWidget(const ResidenceApp());
     await tester.pumpAndSettle();
 
