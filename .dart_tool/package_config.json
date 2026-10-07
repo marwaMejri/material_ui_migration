@@ -56,6 +56,12 @@
       "languageVersion": "3.11"
     },
     {
+      "name": "flutter_lints",
+      "rootUri": "file:///Users/marwa/.pub-cache/hosted/pub.dev/flutter_lints-6.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
       "name": "flutter_localizations",
       "rootUri": "file:///Users/marwa/develop/flutter/packages/flutter_localizations",
       "packageUri": "lib/",
@@ -90,6 +96,12 @@
       "rootUri": "file:///Users/marwa/.pub-cache/hosted/pub.dev/leak_tracker_testing-3.0.2",
       "packageUri": "lib/",
       "languageVersion": "3.2"
+    },
+    {
+      "name": "lints",
+      "rootUri": "file:///Users/marwa/.pub-cache/hosted/pub.dev/lints-6.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
     },
     {
       "name": "matcher",

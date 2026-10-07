@@ -10,11 +10,11 @@
         "cupertino_icons",
         "cupertino_ui",
         "flutter",
-        "flutter_localizations",
         "intl",
         "material_ui"
       ],
       "devDependencies": [
+        "flutter_lints",
         "flutter_test"
       ]
     },
@@ -34,6 +34,13 @@
         "stream_channel",
         "test_api",
         "vector_math"
+      ]
+    },
+    {
+      "name": "flutter_lints",
+      "version": "6.0.0",
+      "dependencies": [
+        "lints"
       ]
     },
     {
@@ -65,15 +72,6 @@
       "dependencies": [
         "clock",
         "meta",
-        "path"
-      ]
-    },
-    {
-      "name": "flutter_localizations",
-      "version": "0.0.0",
-      "dependencies": [
-        "flutter",
-        "intl",
         "path"
       ]
     },
@@ -179,10 +177,24 @@
       ]
     },
     {
+      "name": "lints",
+      "version": "6.1.0",
+      "dependencies": []
+    },
+    {
       "name": "material_color_utilities",
       "version": "0.13.0",
       "dependencies": [
         "collection"
+      ]
+    },
+    {
+      "name": "flutter_localizations",
+      "version": "0.0.0",
+      "dependencies": [
+        "flutter",
+        "intl",
+        "path"
       ]
     },
     {
