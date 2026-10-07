@@ -1,0 +1,25 @@
+{
+  "@@locale": "fr",
+
+  "appTitle": "Gestion de résidence",
+  "dashboardTitle": "Tableau de bord",
+  "settingsTitle": "Paramètres",
+  "sectionOccupancy": "Occupation",
+  "sectionPreferences": "Préférences",
+  "searchLabel": "Rechercher un résident",
+  "metricResidents": "Résidents",
+  "metricSync": "Synchronisation",
+  "sectionArchive": "Archives",
+  "statusActive": "Actif",
+  "residentCount": "{count, plural, =0{Aucun résident} =1{1 résident} other{{count} résidents}}",
+  "lastSync": "Dernière synchronisation : {date}",
+  "languageLabel": "Langue",
+  "languageEnglish": "Anglais",
+  "languageFrench": "Français",
+  "notificationsLabel": "Notifications",
+  "openDetail": "Voir le détail",
+  "detailTitle": "Bâtiment A",
+  "confirmTitle": "Supprimer ce rapport ?",
+  "confirmBody": "Cette action est irréversible.",
+  "deleteAction": "Supprimer"
+}

@@ -1,0 +1,119 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "Residence manager",
+  "@appTitle": {
+    "description": "Application title, shown in the app bar."
+  },
+
+  "dashboardTitle": "Dashboard",
+  "@dashboardTitle": {
+    "description": "Title of the first screen."
+  },
+
+  "settingsTitle": "Settings",
+  "@settingsTitle": {
+    "description": "Title of the settings screen."
+  },
+
+  "sectionOccupancy": "Occupancy",
+  "@sectionOccupancy": {
+    "description": "Heading above the occupancy cards."
+  },
+
+  "sectionPreferences": "Preferences",
+  "@sectionPreferences": {
+    "description": "Heading above the preference controls."
+  },
+
+  "searchLabel": "Search a resident",
+  "@searchLabel": {
+    "description": "Label of the text field on the dashboard."
+  },
+
+  "metricResidents": "Residents",
+  "@metricResidents": {
+    "description": "Label of the first statistic card."
+  },
+
+  "metricSync": "Synchronisation",
+  "@metricSync": {
+    "description": "Label of the second statistic card."
+  },
+
+  "sectionArchive": "Archive",
+  "@sectionArchive": {
+    "description": "Heading of the block rendered by the legacy widget."
+  },
+
+  "statusActive": "Active",
+  "@statusActive": {
+    "description": "Text inside the Cupertino-themed badge."
+  },
+
+  "residentCount": "{count, plural, =0{No residents} =1{1 resident} other{{count} residents}}",
+  "@residentCount": {
+    "description": "Number of residents. Exercises plural selection, which differs per locale.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "lastSync": "Last sync: {date}",
+  "@lastSync": {
+    "description": "Date of the last synchronisation. Exercises date formatting, which differs per locale.",
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMMd"
+      }
+    }
+  },
+
+  "languageLabel": "Language",
+  "@languageLabel": {
+    "description": "Label of the language selector."
+  },
+
+  "languageEnglish": "English",
+  "@languageEnglish": {
+    "description": "Name of the English locale, in English."
+  },
+
+  "languageFrench": "French",
+  "@languageFrench": {
+    "description": "Name of the French locale, in English."
+  },
+
+  "notificationsLabel": "Notifications",
+  "@notificationsLabel": {
+    "description": "Label of the notifications switch."
+  },
+
+  "openDetail": "Open details",
+  "@openDetail": {
+    "description": "Button that pushes the detail route."
+  },
+
+  "detailTitle": "Building A",
+  "@detailTitle": {
+    "description": "Title of the detail screen."
+  },
+
+  "confirmTitle": "Delete this report?",
+  "@confirmTitle": {
+    "description": "Title of the confirmation dialog."
+  },
+
+  "confirmBody": "This cannot be undone.",
+  "@confirmBody": {
+    "description": "Body of the confirmation dialog."
+  },
+
+  "deleteAction": "Delete",
+  "@deleteAction": {
+    "description": "Destructive action of the confirmation dialog."
+  }
+}
