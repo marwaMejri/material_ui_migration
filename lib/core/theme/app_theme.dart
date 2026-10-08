@@ -7,7 +7,7 @@ import 'package:material_ui/material_ui.dart';
 /// bridge is built to inject through the context. Keeping them together makes
 /// the before / after diff easy to read.
 abstract final class AppTheme {
-  static const Color seed = Color.fromARGB(255, 170, 92, 170);
+  static const Color seed = Color(0xFF2E5AAC);
 
   static ThemeData get material => ThemeData(
     colorScheme: ColorScheme.fromSeed(seedColor: seed),
