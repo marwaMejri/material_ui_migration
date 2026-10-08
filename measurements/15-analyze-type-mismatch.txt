@@ -1,0 +1,7 @@
+Analyzing material_ui_migration...
+
+  error - lib/features/legacy/legacy_summary.dart:40:15 - The argument type 'ColorScheme (where ColorScheme is defined in /Users/marwa/develop/flutter/packages/flutter/lib/src/material/color_scheme.dart)' can't be assigned to the parameter type 'ColorScheme (where ColorScheme is defined in /Users/marwa/.pub-cache/hosted/pub.dev/material_ui-1.6.0/lib/src/color_scheme.dart)'.  - argument_type_not_assignable
+           - ColorScheme is defined in /Users/marwa/develop/flutter/packages/flutter/lib/src/material/color_scheme.dart at ../flutter/packages/flutter/lib/src/material/color_scheme.dart:128:7.
+           - ColorScheme is defined in /Users/marwa/.pub-cache/hosted/pub.dev/material_ui-1.6.0/lib/src/color_scheme.dart at ../../.pub-cache/hosted/pub.dev/material_ui-1.6.0/lib/src/color_scheme.dart:134:7.
+
+1 issue found.
