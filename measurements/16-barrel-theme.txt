@@ -1,0 +1,8 @@
+00:00 +0: loading /Users/marwa/develop/material_ui_migration/test/barrel_theme_test.dart
+00:00 +0: a widget behind the unmigrated barrel reads another theme
+app primary:          Color(alpha: 1.0000, red: 0.2745, green: 0.3647, blue: 0.5686, colorSpace: ColorSpace.sRGB)
+barrel primary:       Color(alpha: 1.0000, red: 0.4039, green: 0.3137, blue: 0.6431, colorSpace: ColorSpace.sRGB)
+app titleMedium:      Color(alpha: 1.0000, red: 0.1020, green: 0.1059, blue: 0.1255, colorSpace: ColorSpace.sRGB)
+barrel titleMedium:   Color(alpha: 1.0000, red: 0.1137, green: 0.1059, blue: 0.1255, colorSpace: ColorSpace.sRGB)
+rendered title color: Color(alpha: 1.0000, red: 0.1137, green: 0.1059, blue: 0.1255, colorSpace: ColorSpace.sRGB)
+00:00 +1: All tests passed!
