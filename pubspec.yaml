@@ -1,5 +1,5 @@
 name: material_ui_migration
-description: "A new Flutter project."
+description: "A Flutter app migrated to material_ui, with every step measured."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
